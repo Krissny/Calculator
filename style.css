@@ -40,6 +40,7 @@ body{
 .screen p {
     margin-bottom: 10px;
     margin-right: 10px;
+    margin-top: 40px;
     font-size: 30px;
     overflow: hidden;
     font-family: 'Press Start 2P', sans-serif;
@@ -125,4 +126,8 @@ body{
     font-size : 28px;
     color: #1c8795;
     
+}
+
+.border{
+    padding: 30px;
 }
