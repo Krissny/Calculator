@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); 
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
 
 .container{
     border: 2px solid black;
+    border-radius: 18px;
     height: 640px;
     width: 420px;
     margin-left: auto;
@@ -13,10 +16,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #647f95;
 }
 
 .screen{
     border: 2px solid black;
+    border-radius: 18px;
     height: 200px;
     width: 400px;
     margin-top: 10px;
@@ -24,26 +29,33 @@
     display: flex;
     align-items: self-end;
     justify-content: flex-end;
+    background-color: #14a3b5;
+    box-shadow: 2px -1px 2px;
 }
 .screen p {
     margin-bottom: 10px;
     margin-right: 10px;
-    font-size: 35px;
+    font-size: 30px;
     overflow: hidden;
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
 }
 .keyboard{
     border: 2px solid black;
+    border-radius: 10px;
     height: 550px;
     width: 400px;
     margin-bottom: 10px;
     display: flex;
+    background-color: #45535f;
 }
 .numbers{
     display: flex;
     width: 300px;
     flex-wrap: wrap;
     padding: 17px;
-    border: 2px solid red;
+    padding-left: 8px;
+    /* border: 2px solid red; */
     justify-content: center;
     gap: 10px;
     align-items: center;
@@ -51,24 +63,50 @@
 .operator{
     display: flex;
     flex-direction: column;
-    padding: 4px;
+    padding: 8px;
     flex-wrap: wrap;
     gap: 30px;
     width: 100px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     align-items: center;
     justify-content: center;
 }
 .btn,.enter{
     width: 80px;
     height: 60px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #59b1b1;
+    color: white;
+    font-weight: bold;
 }
 .btn2{
     width: 90px;
     height: 64px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #59b1b1;
+    color: white;
+    font-weight: bold;
 }
 .longBtn{
     width: 95%;
     margin-bottom: 10px;
     padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #59b1b1;
+    color: white;
+    font-weight: bold;
+}
+
+.moreBtn{
+    display: flex;
+    gap: 20px;
+}
+.clear{
+    width: 104px;
+}
+.backspace{
+    width: 261px;
 }
