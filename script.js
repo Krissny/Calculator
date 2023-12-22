@@ -21,6 +21,114 @@ let firstNumber ='';
 let SecondNumber ='';
 let Operator = '';
 
+
+
+//Buttons
+const numbers = document.querySelectorAll(".btn");
+const operation = document.querySelectorAll(".btn2"); // all the operator button
+const display = document.querySelector(".text");
+const clearBtn = document.querySelector(".clear");
+const backspaceBtn = document.querySelector(".backspace");
+const enterBtn =document.querySelector('.enter');
+//flags
+let flag = false;
+let flag2 = false;
+let isDecimal = false;
+
+//keyboard binding
+
+//numbers
+const body = document.querySelector("body");
+const one = document.getElementById("1");
+const two = document.getElementById("2");
+const three = document.getElementById("3");
+const four = document.getElementById("4");
+const five = document.getElementById("5");
+const six = document.getElementById("6");
+const seven = document.getElementById("7");
+const eight = document.getElementById("8");
+const nine = document.getElementById("9");
+const zero = document.getElementById("0");
+const decimal = document.getElementById(".");
+//operation
+const sum = document.getElementById('+');
+const minus = document.getElementById('-');
+const mul = document.getElementById('x');
+const divi = document.getElementById('÷');
+
+//binding
+body.addEventListener('keydown', (e)=>{
+    console.log(e.key);
+    switch(e.key){
+        case '1':
+            one.click();
+            break;
+        case '2':
+            two.click();
+            break;
+        case '3':
+            three.click();
+            break;
+        case '4':
+            four.click();
+            break;
+        case '5':
+            five.click();
+            break;
+        case '6':
+            six.click();
+            break;
+        case '7':
+            seven.click();
+            break;
+        case '8':
+            eight.click();
+            break;
+        case '9':
+            nine.click();
+            break;
+        case '0':
+            zero.click();
+            break;
+        case '+':
+        sum.click();
+            break;
+        case '-':
+            minus.click();
+            break;
+        case '*':
+            mul.click();
+            break;
+        case '/':
+            divi.click();
+            break;
+        case 'Backspace':
+            backspaceBtn.click();
+            break;
+        case 'Decimal':
+            decimal.click();
+            break;
+        case 'Enter':
+            enterBtn.click();
+            break;
+        case 'Alt':
+            clearBtn.click();
+            break;
+        default:
+            break;
+    }
+})
+
+//Utilities function
+
+function addText(text){
+    display.textContent += text;
+};
+function resetOperatorsColor(){
+    for( let i =0; i<operation.length; i++){
+        operation[i].style.backgroundColor ='#59b1b1';
+    }
+}
 function operate(firstNumber, SecondNumber, Operator){
     
     if(Operator=='x'){
@@ -36,17 +144,8 @@ function operate(firstNumber, SecondNumber, Operator){
         return subtract(firstNumber, SecondNumber);
     }
 }
+//Actual operation calling functions
 
-//Buttons
-const numbers = document.querySelectorAll(".btn");
-const operation = document.querySelectorAll(".btn2"); // all the operator button
-const display = document.querySelector(".text");
-const clearBtn = document.querySelector(".clear");
-const backspaceBtn = document.querySelector(".backspace");
-const enterBtn =document.querySelector('.enter');
-let flag = false;
-let flag2 = false;
-isDecimal = false;
 operation.forEach((e)=>{
     e.addEventListener('click', (e)=>{
         // console.log(e.currentTarget);
@@ -61,14 +160,6 @@ operation.forEach((e)=>{
         }
     })
 })
-function addText(text){
-    display.textContent += text;
-};
-function resetOperatorsColor(){
-    for( let i =0; i<operation.length; i++){
-        operation[i].style.backgroundColor ='#59b1b1';
-    }
-}
 numbers.forEach((e)=>{
     e.addEventListener('click', (e)=>{
         if(flag2 == true){
