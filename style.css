@@ -5,11 +5,15 @@
     padding: 0;
 }
 
+body{
+    background: #b3dce1;
+}
+
 .container{
     border: 2px solid black;
     border-radius: 18px;
-    height: 600px;
-    width: 420px;
+    height: 540px;
+    width: 374px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 35px;
@@ -17,13 +21,14 @@
     flex-direction: column;
     align-items: center;
     background-color: #647f95;
+    box-shadow: 0px 0px 6px 4px #829ea1;
 }
 
 .screen{
     border: 2px solid black;
     border-radius: 18px;
     height: 200px;
-    width: 400px;
+    width: 351px;
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
@@ -44,17 +49,18 @@
     border: 2px solid black;
     border-radius: 10px;
     height: 550px;
-    width: 400px;
+    width: 356px;
     margin-bottom: 10px;
     display: flex;
     background-color: #45535f;
 }
 .numbers{
     display: flex;
-    width: 300px;
+    width: 215px;
     flex-wrap: wrap;
     padding: 17px;
-    padding-left: 8px;
+    padding-right: 6px;
+    padding-left: 19px;
     /* border: 2px solid red; */
     justify-content: center;
     gap: 10px;
@@ -65,15 +71,15 @@
     flex-direction: column;
     padding: 8px;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 22px;
     width: 100px;
     /* border: 2px solid blue; */
     align-items: center;
     justify-content: center;
 }
 .btn,.enter{
-    width: 80px;
-    height: 60px;
+    width: 65px;
+    height: 55px;
     font-size: 20px;
     border-radius: 15px;
     background-color: #59b1b1;
@@ -81,8 +87,8 @@
     font-weight: bold;
 }
 .btn2{
-    width: 90px;
-    height: 64px;
+    width: 75px;
+    height: 57px;
     font-size: 20px;
     border-radius: 15px;
     background-color: #59b1b1;
@@ -102,19 +108,21 @@
 
 .moreBtn{
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 .clear{
     width: 104px;
 }
 .backspace{
-    width: 261px;
+   width: 199px;
 }
-.text{
+.heading{
     display: flex;
     justify-content: center;
+    margin-bottom: 45px;
     margin-top: 45px;
     font-family: 'Press Start 2P', sans-serif;
-    font-size : 20px;
+    font-size : 28px;
     color: #1c8795;
+    
 }
