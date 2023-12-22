@@ -110,3 +110,11 @@
 .backspace{
     width: 261px;
 }
+.text{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size : 20px;
+    color: #1c8795;
+}
