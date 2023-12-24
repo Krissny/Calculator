@@ -13,7 +13,7 @@ body{
     border: 2px solid black;
     border-radius: 18px;
     height: 540px;
-    width: 374px;
+    width: 351px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 35px;
@@ -28,7 +28,7 @@ body{
     border: 2px solid black;
     border-radius: 18px;
     height: 200px;
-    width: 351px;
+    width: 329px;
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
@@ -50,7 +50,7 @@ body{
     border: 2px solid black;
     border-radius: 10px;
     height: 550px;
-    width: 356px;
+    width: 336px;
     margin-bottom: 10px;
     display: flex;
     background-color: #45535f;
@@ -61,7 +61,7 @@ body{
     flex-wrap: wrap;
     padding: 17px;
     padding-right: 6px;
-    padding-left: 19px;
+    padding-left: 15px;
     /* border: 2px solid red; */
     justify-content: center;
     gap: 10px;
@@ -70,10 +70,9 @@ body{
 .operator{
     display: flex;
     flex-direction: column;
-    padding: 8px;
     flex-wrap: wrap;
     gap: 22px;
-    width: 100px;
+    width: 94px;
     /* border: 2px solid blue; */
     align-items: center;
     justify-content: center;
@@ -123,7 +122,7 @@ body{
     margin-bottom: 45px;
     margin-top: 45px;
     font-family: 'Press Start 2P', sans-serif;
-    font-size : 28px;
+    font-size : 25px;
     color: #1c8795;
     
 }
